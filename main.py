@@ -22,7 +22,17 @@ def send_telegram_message(text):
 
 def check_turtle_signal():
     print("⏳ در حال دریافت داده‌های بازار...")
-    assets = {"طلا": "GC=F", "نقره": "SI=F", "بیت‌کوین": "BTC-USD", "دوج کوین": "DOGE-USD", "ریپل": "XRP-USD"}
+    # لیست ارتقا یافته: طلا، نقره، بیت‌کوین، دوج، ریپل، سولانا، اتریوم، آوالانچ
+    assets = {
+        "🥇 طلا": "GC=F", 
+        "🥈 نقره": "SI=F", 
+        "₿ بیت‌کوین": "BTC-USD", 
+        "🐕 دوج کوین": "DOGE-USD", 
+        "💧 ریپل": "XRP-USD",
+        "☀️ سولانا": "SOL-USD",
+        "💎 اتریوم": "ETH-USD",
+        "🏔️ آوالانچ": "AVAX-USD"
+    }
     
     message_body = "📊 **گزارش روزانه بازار (الگوریتم لاک‌پشت)**\n\n"
     signal_found = False
