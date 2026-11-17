@@ -1,4 +1,4 @@
-import yfinance as yf
+خimport yfinance as yf
 import pandas as pd
 import numpy as np
 import requests
@@ -71,4 +71,5 @@ def check_turtle_signal():
 
 if __name__ == "__main__":
     check_turtle_signal()
+
 
