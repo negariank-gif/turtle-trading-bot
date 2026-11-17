@@ -1,10 +1,11 @@
 name: Daily Trading Bot
 
 on:
+  push: # <--- با این خط، هر وقت تغییری بدیم خودش اجرا میشه
   schedule:
     # اجرا در ساعت 5:30 صبح UTC = 9:00 صبح به وقت ایران
     - cron: '30 5 * * *'
-  workflow_dispatch: # اجازه اجرای دستی برای تست
+  workflow_dispatch: 
 
 jobs:
   build-and-run:
